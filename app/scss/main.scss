@@ -1,6 +1,3 @@
-$colorWhite: #fff;
-$colorGrey: #7f7f7f;
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -9,41 +6,44 @@ $colorGrey: #7f7f7f;
 html {
   font-size: 62.5%; }
 
-.wrapper {
-	background: #000;
-	.content {
-		max-width: 1170px;
-		margin: auto;
-		.item {
-			margin: 5rem 0;
-			&img {
-				width: 100%;
-				display: block;
-				margin-bottom: 3rem;
-			}
-			&__title {
-				font: 2rem/3rem 'Open Sans';
-				color: $colorWhite;
-				margin-bottom: 3rem;
-			}
-			&__header {
-				font: 1.4rem/2rem 'Open Sans';
-				color: $colorWhite;
-			}
-			&__par {
-				font: 1.4rem/2rem 'Open Sans';
-				color: $colorGrey;
-				margin-bottom: 2.5rem;
-			}
-			&__link {
-				text-decoration: none;
-				padding: .8rem;
-				color: $colorWhite;
-				background: #e85356;
-				&:hover {
-					background: #d5373a;
-				}
-			}
-		}
-	}
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
 }
