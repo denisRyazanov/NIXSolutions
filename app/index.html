@@ -8,16 +8,86 @@
     <link rel="stylesheet" href="css/bootstrap.css">
   </head>
   <body> 
-    <div class="header">
-      <div class="homepage-hero-module">
-        <div class="video-container">
-          <div class="filter"></div>
-          <video class="fillWidth" autoplay="true" loop="">
-            <source src="assets/video/Writing-Working.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
-            <source src="assets/video/Writing-Working.webm" type="video/webm">Your browser does not support the video tag. I suggest you upgrade your browser.
-          </video>
-          <div class="poster hidden"><img src="assets/video/Writing-Working.jpg" alt="Writing-Working"></div>
+    <header class="header">
+      <div class="fullscreen-bg">
+        <div class="overlay"></div>
+        <div class="headerContent">
+          <nav class="navigation">
+            <div class="row">
+              <div class="logo col-md-2"><a href="">SiteName</a></div>
+              <ul class="menu col-md-8">
+                <li><a href="">For Businesses</a></li>
+                <li><a href="">My Planning Tools</a></li>
+                <li><a href="">Find Businesses</a></li>
+                <li><a href="">Find Products</a></li>
+              </ul>
+              <div class="user col-md-2">
+                <div class="enter"><a href="">Log in</a>
+                  <p>or</p><a href="">Sign up</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div class="mainTitle">
+            <h1>Plan the perfect funeral <br>in less than five minutes</h1>
+            <p>Let us do work for you - then share your wishes <br>with familly and friends</p>
+          </div>
+          <form class="form">
+            <input type="text" placeholder="Enter city or zip code">
+            <button type="submit">Get Quote</button>
+          </form>
+          <object class="arrow-down" type="image/svg+xml" data="assets/icons/arrow-down.svg"></object>
         </div>
+        <video class="fullscreen-bg__video" loop="" muted="" autoplay="" poster="assets/img/Writing-Working.jpg">
+          <source src="assets/video/Writing-Working.mp4" type="video/mp4">
+          <source src="assets/video/Writing-Working.webm" type="video/webm">
+        </video>
+      </div>
+    </header>
+    <div class="main">
+      <div class="sectionWeProf">
+        <section class="section">
+          <h2>We will Find to Right professional for You</h2>
+          <div class="row">
+            <article class="article col-md-4">
+              <object class="articleIcon" type="image/svg+xml" data="assets/icons/alarm-clock.svg"></object>
+              <h3>Save Time</h3>
+              <p>Tell us your funeral requirments are<br>and we'll find you best quotes</p>
+            </article>
+            <article class="article col-md-4">
+              <object class="articleIcon" type="image/svg+xml" data="assets/icons/save-money.svg"></object>
+              <h3>Save Money</h3>
+              <p>We make sure you find<br>the best quotes</p>
+            </article>
+            <article class="article col-md-4">
+              <object class="articleIcon" type="image/svg+xml" data="assets/icons/id-card.svg"></object>
+              <h3>Personalized Service</h3>
+              <p>We tailor quotes to your needs -<br>just tell us what you want</p>
+            </article>
+          </div>
+        </section>
+      </div>
+      <div class="sectionCreate">
+        <section class="section">
+          <h2>Create a Personalized Plan<br>to Share & Ensure Your Plan is Prefect</h2>
+          <div class="row">
+            <article class="article col-md-4">
+              <object class="articleIcon" type="image/svg+xml" data="assets/icons/answer.svg"></object>
+              <h3>Answer<br>the questions</h3>
+              <p>Tell us your funeral requirments are<br>and we'll find you best quotes</p>
+            </article>
+            <article class="article col-md-4">
+              <object class="articleIcon" type="image/svg+xml" data="assets/icons/mail.svg"></object>
+              <h3>Enter<br>email address</h3>
+              <p>We make sure you find<br>the best quotes</p>
+            </article>
+            <article class="article col-md-4">
+              <object class="articleIcon" type="image/svg+xml" data="assets/icons/message.svg"></object>
+              <h3>Receive the email<br>with funeral plan and quotes</h3>
+              <p>We tailor quotes to your needs -<br>just tell us what you want</p>
+            </article>
+          </div>
+        </section>
       </div>
     </div>
     <script src="js/jquery-3.2.1.min.js"></script>

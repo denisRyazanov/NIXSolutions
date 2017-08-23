@@ -6,16 +6,94 @@ include var/mixins.pug
 html
 	include includes/head.pug
 	body 
-		.header
-			.homepage-hero-module
-				.video-container
-					.filter
-					video.fillWidth(autoplay='true', loop='')
-						source(src='assets/video/Writing-Working.mp4', type='video/mp4')
-						| Your browser does not support the video tag. I suggest you upgrade your browser.
-						source(src='assets/video/Writing-Working.webm', type='video/webm')
-						| Your browser does not support the video tag. I suggest you upgrade your browser.
-					.poster.hidden
-						img(src='assets/video/Writing-Working.jpg', alt='Writing-Working')
+		header.header
+			.fullscreen-bg
+				.overlay
+				.headerContent
+					nav.navigation
+						.row
+							.logo.col-md-2
+								a(href="") SiteName
+							ul.menu.col-md-8
+								li
+									a(href="") For Businesses
+								li
+									a(href="") My Planning Tools
+								li
+									a(href="") Find Businesses
+								li
+									a(href="") Find Products
+							.user.col-md-2
+								.enter
+									a(href="") Log in
+									p or
+									a(href="") Sign up
+					.mainTitle
+						h1 Plan the perfect funeral 
+							br
+							|in less than five minutes
+						p Let us do work for you - then share your wishes 
+							br 
+							|with familly and friends
+					form.form
+						input(type="text", placeholder="Enter city or zip code")
+						button(type="submit") Get Quote
+					object.arrow-down(type='image/svg+xml', data='assets/icons/arrow-down.svg')
+				video.fullscreen-bg__video(loop='', muted='', autoplay='', poster='assets/img/Writing-Working.jpg')
+					source(src='assets/video/Writing-Working.mp4', type='video/mp4')
+					source(src='assets/video/Writing-Working.webm', type='video/webm')
+		.main
+			.sectionWeProf
+				section.section
+					h2 We will Find to Right professional for You
+					.row
+						article.article.col-md-4
+							object.articleIcon(type='image/svg+xml', data='assets/icons/alarm-clock.svg')
+							h3 Save Time
+							p Tell us your funeral requirments are
+								br 
+								|and we'll find you best quotes
+						article.article.col-md-4
+							object.articleIcon(type='image/svg+xml', data='assets/icons/save-money.svg')
+							h3 Save Money
+							p We make sure you find
+								br 
+								|the best quotes
+						article.article.col-md-4
+							object.articleIcon(type='image/svg+xml', data='assets/icons/id-card.svg')
+							h3 Personalized Service
+							p We tailor quotes to your needs -
+								br 
+								|just tell us what you want
+			.sectionCreate
+				section.section
+					h2 Create a Personalized Plan
+						br 
+						|to Share & Ensure Your Plan is Prefect
+					.row
+						article.article.col-md-4
+							object.articleIcon(type='image/svg+xml', data='assets/icons/answer.svg')
+							h3 Answer
+								br 
+								|the questions
+							p Tell us your funeral requirments are
+								br 
+								|and we'll find you best quotes
+						article.article.col-md-4
+							object.articleIcon(type='image/svg+xml', data='assets/icons/mail.svg')
+							h3 Enter
+								br
+								|email address
+							p We make sure you find
+								br 
+								|the best quotes
+						article.article.col-md-4
+							object.articleIcon(type='image/svg+xml', data='assets/icons/message.svg')
+							h3 Receive the email
+								br 
+								|with funeral plan and quotes
+							p We tailor quotes to your needs -
+								br 
+								|just tell us what you want
 		script(src="js/jquery-3.2.1.min.js")
 		script(src="js/user.js")
