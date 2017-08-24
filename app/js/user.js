@@ -61,3 +61,12 @@ function scaleBannerVideoSize(element){
 
     });
 }
+$(document).ready(function() {
+	$('.menuButton').click(function() {
+		$('.mobileContent').addClass('active');
+	});
+	$('.cross').click(function() {
+		$('.mobileContent').removeClass('active');
+	});
+	$('.goDown a').mPageScroll2id();
+});

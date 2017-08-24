@@ -1,0 +1,76 @@
+header.header
+	.fullscreen-bg
+		.overlay
+		.headerContent
+			nav.navigation
+				.row
+					.logo.col-md-2.col-sm-6
+						a(href="") SiteName
+					.menuContent.col-md-8
+						span.menuButton
+						ul.menu
+							li
+								a(href="") For Businesses
+							li
+								a(href="") My Planning Tools
+							li
+								a(href="") Find Businesses
+							li
+								a(href="") Find Products
+						.mobileContent
+							span.cross
+							ul.mobile
+								li
+									a(href="") How it Works
+								li
+									a(href="") About
+								li
+									a(href="") Blog
+							ul.mobile
+								li
+									a(href="") Log in 
+									span or 
+									a(href="") Sign up
+							ul.mobile
+								li
+									a(href="") Support Center
+								li
+									a(href="") Contact Us
+								li
+									a(href="") Reviews
+								li
+									a(href="") Privacy
+								li
+									a(href="") Terms of Service
+							ul.mobile
+								li
+									a(href="") Facebook
+								li
+									a(href="") Twitter
+								li
+									a(href="") YouTube
+								li
+									a(href="") Blogs
+					.user.col-md-2.col-sm-6
+						.enter
+							a(href="") Log in
+							p or
+							a(href="") Sign up
+			.mainTitle
+				h1 Plan the perfect funeral 
+					br
+					|in less than five minutes
+				p Let us do work for you - then share your wishes 
+					br 
+					|with familly and friends
+			form.form
+				input(type="text", placeholder="Enter city or zip code")
+				button(type="submit")
+					object.next(type='image/svg+xml', data='assets/icons/next.svg')
+					span Get Quote
+			.goDown
+				a(href="#weFind")
+					+ image("down-arrow.png", "plane")
+		video.fullscreen-bg__video(loop='', muted='', autoplay='', poster='assets/img/Writing-Working.jpg')
+			source(src='assets/video/Writing-Working.mp4', type='video/mp4')
+			source(src='assets/video/Writing-Working.webm', type='video/webm')

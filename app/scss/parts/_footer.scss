@@ -1,0 +1,31 @@
+.footer {
+	height: 100%;
+	padding: 2rem 0 3rem 0;
+	background: #373737;
+	.footerContent {
+		max-width: 1200px;
+		margin: auto;
+		.logo {
+			font: 2.4rem/4rem Helvetica;
+			a {
+				color: #fff;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+		p {
+			color: grey;
+		}
+		ul {
+			li {
+				color: saddlebrown;
+				list-style: none;
+				margin-bottom: 1rem;
+				a {
+					color: #fff;
+				}
+			}
+		}
+	}
+}

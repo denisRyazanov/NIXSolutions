@@ -7,21 +7,46 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.css">
   </head>
-  <body> 
+  <body>
     <header class="header">
       <div class="fullscreen-bg">
         <div class="overlay"></div>
         <div class="headerContent">
           <nav class="navigation">
             <div class="row">
-              <div class="logo col-md-2"><a href="">SiteName</a></div>
-              <ul class="menu col-md-8">
-                <li><a href="">For Businesses</a></li>
-                <li><a href="">My Planning Tools</a></li>
-                <li><a href="">Find Businesses</a></li>
-                <li><a href="">Find Products</a></li>
-              </ul>
-              <div class="user col-md-2">
+              <div class="logo col-md-2 col-sm-6"><a href="">SiteName</a></div>
+              <div class="menuContent col-md-8"><span class="menuButton"></span>
+                <ul class="menu">
+                  <li><a href="">For Businesses</a></li>
+                  <li><a href="">My Planning Tools</a></li>
+                  <li><a href="">Find Businesses</a></li>
+                  <li><a href="">Find Products</a></li>
+                </ul>
+                <div class="mobileContent"><span class="cross"></span>
+                  <ul class="mobile">
+                    <li><a href="">How it Works</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Blog</a></li>
+                  </ul>
+                  <ul class="mobile">
+                    <li><a href="">Log in </a><span>or </span><a href="">Sign up</a></li>
+                  </ul>
+                  <ul class="mobile">
+                    <li><a href="">Support Center</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Reviews</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                  </ul>
+                  <ul class="mobile">
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">YouTube</a></li>
+                    <li><a href="">Blogs</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="user col-md-2 col-sm-6">
                 <div class="enter"><a href="">Log in</a>
                   <p>or</p><a href="">Sign up</a>
                 </div>
@@ -34,9 +59,11 @@
           </div>
           <form class="form">
             <input type="text" placeholder="Enter city or zip code">
-            <button type="submit">Get Quote</button>
+            <button type="submit">
+              <object class="next" type="image/svg+xml" data="assets/icons/next.svg"></object><span>Get Quote</span>
+            </button>
           </form>
-          <object class="arrow-down" type="image/svg+xml" data="assets/icons/arrow-down.svg"></object>
+          <div class="goDown"><a href="#weFind"><img src="assets/img/down-arrow.png" alt="plane"></a></div>
         </div>
         <video class="fullscreen-bg__video" loop="" muted="" autoplay="" poster="assets/img/Writing-Working.jpg">
           <source src="assets/video/Writing-Working.mp4" type="video/mp4">
@@ -44,53 +71,144 @@
         </video>
       </div>
     </header>
-    <div class="main">
+    <main class="main">
       <div class="sectionWeProf">
         <section class="section">
-          <h2>We will Find to Right professional for You</h2>
+          <h2 id="weFind">We will Find<br>Right professional for You</h2>
           <div class="row">
-            <article class="article col-md-4">
+            <article class="article col-sm-4">
               <object class="articleIcon" type="image/svg+xml" data="assets/icons/alarm-clock.svg"></object>
               <h3>Save Time</h3>
               <p>Tell us your funeral requirments are<br>and we'll find you best quotes</p>
             </article>
-            <article class="article col-md-4">
+            <div class="clear"></div>
+            <article class="article col-sm-4">
               <object class="articleIcon" type="image/svg+xml" data="assets/icons/save-money.svg"></object>
               <h3>Save Money</h3>
               <p>We make sure you find<br>the best quotes</p>
             </article>
-            <article class="article col-md-4">
+            <div class="clear"></div>
+            <article class="article col-sm-4">
               <object class="articleIcon" type="image/svg+xml" data="assets/icons/id-card.svg"></object>
               <h3>Personalized Service</h3>
               <p>We tailor quotes to your needs -<br>just tell us what you want</p>
             </article>
+            <div class="clear"></div>
           </div>
         </section>
       </div>
       <div class="sectionCreate">
         <section class="section">
-          <h2>Create a Personalized Plan<br>to Share & Ensure Your Plan is Prefect</h2>
+          <h2>Create a Personalized Plan<br>to Share &amp; Ensure Your Plan is Perfect</h2>
           <div class="row">
-            <article class="article col-md-4">
+            <article class="article col-sm-4">
               <object class="articleIcon" type="image/svg+xml" data="assets/icons/answer.svg"></object>
               <h3>Answer<br>the questions</h3>
               <p>Tell us your funeral requirments are<br>and we'll find you best quotes</p>
             </article>
-            <article class="article col-md-4">
+            <article class="article col-sm-4">
               <object class="articleIcon" type="image/svg+xml" data="assets/icons/mail.svg"></object>
               <h3>Enter<br>email address</h3>
               <p>We make sure you find<br>the best quotes</p>
             </article>
-            <article class="article col-md-4">
+            <article class="article col-sm-4">
               <object class="articleIcon" type="image/svg+xml" data="assets/icons/message.svg"></object>
               <h3>Receive the email<br>with funeral plan and quotes</h3>
               <p>We tailor quotes to your needs -<br>just tell us what you want</p>
             </article>
+          </div><a href="">Create your Free Plan</a>
+        </section>
+      </div>
+      <div class="sectionPeople">
+        <section class="section">
+          <h2>What People are Saying</h2>
+          <div class="row">
+            <article class="article col-sm-4">
+              <h3>Jude says</h3>
+              <object class="star" type="image/svg+xml" data="assets/icons/star.svg"></object>
+              <object class="star" type="image/svg+xml" data="assets/icons/star.svg"></object>
+              <object class="star" type="image/svg+xml" data="assets/icons/star.svg"></object>
+              <object class="star" type="image/svg+xml" data="assets/icons/star.svg"></object>
+              <object class="star" type="image/svg+xml" data="assets/icons/star.svg"></object>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quis praesentium atque temporibus accusantium, corporis, vel quisquam ex deleniti hic quas perferendis velit iste doloremque placeat illum est voluptatibus quae.</p>
+            </article>
+            <article class="article col-sm-4">
+              <h3>Barbara says</h3>
+              <object class="star" type="image/svg+xml" data="assets/icons/star.svg"></object>
+              <object class="star" type="image/svg+xml" data="assets/icons/star.svg"></object>
+              <object class="star" type="image/svg+xml" data="assets/icons/star.svg"></object>
+              <object class="star" type="image/svg+xml" data="assets/icons/star.svg"></object>
+              <object class="star" type="image/svg+xml" data="assets/icons/star.svg"></object>
+              <p>Tell us your funeral requirments are lorem ipsum dolor de fenural us your funeral requirments are lorem ipsum dolor de fenural us your funeral requirments are lorem ipsum dolor de fenural us your </p>
+            </article>
+            <article class="article col-sm-4">
+              <h3>Betty says</h3>
+              <object class="star" type="image/svg+xml" data="assets/icons/star.svg"></object>
+              <object class="star" type="image/svg+xml" data="assets/icons/star.svg"></object>
+              <object class="star" type="image/svg+xml" data="assets/icons/star.svg"></object>
+              <object class="star" type="image/svg+xml" data="assets/icons/star.svg"></object>
+              <object class="star" type="image/svg+xml" data="assets/icons/star.svg"></object>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quis praesentium atque temporibus accusantium, corporis, vel quisquam ex deleniti hic quas perferendis velit iste doloremque placeat illum est voluptatibus quae.</p>
+            </article>
           </div>
         </section>
       </div>
-    </div>
+      <div class="sectionFuture">
+        <section class="section">
+          <h2>Future Planning Guidance</h2>
+          <div class="row">
+            <article class="article col-sm-6 col-md-4"><img src="assets/img/plane.jpg" alt="plane">
+              <h3>How Mach Does the Average<br>Funeral Cost?</h3>
+              <p>Lorem ipsum dolor de virtus falsento ipsum dolor ipsum dolor de virtus falsento ipsum dolor ipsum dolor de virtus falsento ipsum dolor ipsum dolor de virtus falsento ipsum dolor ipsum dolor de virtus falsento ipsum dolor.</p>
+              <p class="date">February 23, 2017</p>
+            </article>
+            <article class="article col-sm-6 col-md-4"><img src="assets/img/plane.jpg" alt="plane">
+              <h3>Humanist Funeral: A Unique Farewell<br>and Celebration Of Life</h3>
+              <p>Lorem ipsum dolor de virtus falsento ipsum dolor ipsum dolor de virtus falsento ipsum dolor ipsum dolor de virtus falsento ipsum dolor ipsum dolor de virtus falsento ipsum dolor ipsum dolor de virtus falsento ipsum dolor.</p>
+              <p class="date">February 23, 2017</p>
+            </article>
+            <article class="article col-sm-6 col-md-4"><img src="assets/img/plane.jpg" alt="plane">
+              <h3>Humanist Funeral: A Unique Farewell<br>and Celebration Of Life</h3>
+              <p>Lorem ipsum dolor de virtus falsento ipsum dolor ipsum dolor de virtus falsento ipsum dolor ipsum dolor de virtus falsento ipsum dolor ipsum dolor de virtus falsento ipsum dolor ipsum dolor de virtus falsento ipsum dolor.</p>
+              <p class="date">February 23, 2017</p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footerContent">
+        <div class="row">
+          <div class="site col-sm-3">
+            <div class="logo"><a href="">SiteName</a></div>
+            <p>SiteName 2010-2017</p>
+          </div>
+          <ul class="col-sm-3">
+            <li>Help &amp; Support</li>
+            <li><a href="">How it Works</a></li>
+            <li><a href="">Support Center</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+          <ul class="col-sm-3">
+            <li>Company</li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">News &amp; Blog</a></li>
+            <li><a href="">Reviews</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Terms of Service</a></li>
+          </ul>
+          <ul class="col-sm-3">
+            <li>Social</li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">YouTube</a></li>
+            <li><a href="">Blogs</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/PageScroll2id.min.js"></script>
     <script src="js/user.js"></script>
   </body>
 </html>

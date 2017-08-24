@@ -12,134 +12,9 @@ body {
 		color: #F2F0EE;
 	}
 }
-
-.header {
-	margin-bottom: 4rem;
-}
-.fullscreen-bg {
-    overflow: hidden;
-    z-index: 2;
-    position: relative;
-    height: 100vh;
-    padding-top: 56%;
-}
- 
-.fullscreen-bg__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-	height: 100vh;
-}
-
-.overlay {
-    background: rgba(0,0,0,0.6);
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100vh;
-    z-index: 4;
-}
-.headerContent {
-	width: 1200px;
-	height: 100%;
-	margin-left: -600px;
-	position: absolute;
-	top: 0;
-	left: 50%;
-	z-index: 22;
-}
-
-/*-----------------------------------------------NAVIGATION------------------------------------------------*/
-.navigation {
-	padding: 3.5rem 0;
-	color: #F2F0EE;
-	border-bottom: 1px solid rgba(255,255,255,0.1);
-	margin-bottom: 18rem;
-	a {
-		color: #F2F0EE;
-	}
-	.logo {
-		font: 3.6rem/4rem Helvetica;
-		a {
-			color: #fff;
-			&:hover {
-				text-decoration: none;
-			}
-		}
-	}
-	.menu {
-		padding-top: 1.5rem;
-		list-style: none;
-		display: flex;
-		justify-content: flex-end;
-		li {
-			margin-right: 4rem;
-		}
-	}
-	.enter {
-		width: 160px;
-		padding: 1.5rem;
-		display: flex;
-		justify-content: flex-start;
-		background-color: #7DAC3F;
-		border-radius: .5rem;
-		a, p {
-			margin-right: 1rem;
-		}
-	}
-}
-/*-----------------------------------------------END-----------------------------------------------------*/
-
-/*-----------------------------------------------------------MainTitle--------------------------------------------*/
-
-.mainTitle {
-	text-align: center;
-	h1 {
-		font: 4rem Helvetica;
-		color: #fff;
-	}
-	p {
-		color: rgba(255,255,255,.7);
-		margin-bottom: 2rem;
-	}
-}
-/*---------------------------------------------------------------end--------------------------------------------------*/
-
-/*-----------------------------------------------------------Form--------------------------------------------*/
-.form {
-	text-align: center;
-	input {
-		width: 400px;
-		border: none;
-		border-radius: .5rem 0 0 .5rem;
-		padding: 1.5rem;
-	}
-	button {
-		width: 180px;
-		border: none;
-		padding: 1.5rem;
-		border-radius: 0 .5rem .5rem 0;
-		background-color: #AA8C67;
-		margin-left: -.5rem;
-		color: #fff;
-	}
-}
-/*---------------------------------------------------------------end--------------------------------------------------*/
-.arrow-down{
-	width: 32px;
-	position: absolute;
-	margin-left: -16px;
-	left: 50%;
-	bottom: 0;
-	transition: width .5s;
-	&:hover {
-		width: 40px;
-		cursor: pointer;
-	}
-}
-
-/*------------------------------------------------------------section1-----------------------------------------------------------*/
+@import 'parts/header';
+@import 'parts/mediaHeader';
+@import 'parts/footer';
 
 .section {
 	max-width: 1200px;
@@ -151,23 +26,45 @@ body {
 		margin-bottom: 6rem;
 	}
 	.article {
+		margin-bottom: 4rem;
 		h3 {
 			margin-bottom: 2rem;
 		}
+	}
+	a {
+		padding: 2rem 6rem;
+		color: #fff;
+		background-color: #7DAC3F;
+		border-radius: .5rem;
 	}
 }
 
 .sectionCreate {
 	background-color: #f5f5f5;
+	margin-bottom: 4rem;
 	h2 {
 		padding-top: 5rem;
 	}
 	.article {
 		background-color: #fff;
-//		margin-right: 2rem;
+		margin-bottom: 8rem;
 		padding: 3rem 0;
 		&:nth-of-type(3){
 			margin-right: 0;
+		}
+	}
+}
+.sectionPeople {
+	.section {
+		.article {
+			text-align: left;
+			h3{
+				margin-bottom: 0;
+			}
+			.star {
+				width: 15px;
+				margin-bottom: 2rem;
+			}
 		}
 	}
 }
@@ -176,33 +73,32 @@ body {
 	margin-bottom: 4rem;
 }
 
-
-.content {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.content h2 {
-	text-align: center;
-	font-size: 30px;
-}
-
-.content p {
-	text-align: justify;
-	font-size: 20px;
-}
- 
-@media (max-width: 1024px) {
-	.fullscreen-bg {
-		background: url('../assets/img/Writing-Working.jpg') center center / cover no-repeat;
+.sectionFuture {
+	color: #000;
+	.section {
+		.article {
+			text-align: left;
+			img {
+				width: 100%;
+				margin-bottom: 2rem;
+				border-radius: 1rem;
+			}
+			p {
+				padding-bottom: 1rem;
+			}
+			.date {
+				font-size: 1.2rem;
+				color: grey;
+			}
+		}
 	}
-
-	.fullscreen-bg__video {
-		display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 414px) {
+	.clear {
+		clear: both;
 	}
-
-	.overlay h1 {
-	    font-size: 40px;
+	.articleIcon {
+		float: left;
+		margin-left: 10%;
 	}
 }
